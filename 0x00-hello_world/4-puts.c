@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
+/**
  main - Uses puts function to print a line
- Description: We are unable to use printf so must use put to print this string
- Return: Code should return a 0
+ Description: We are unable to use print so we use the main function
+ Return: 0
  */
 int main(void)
 {
