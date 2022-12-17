@@ -1,17 +1,18 @@
 #include "main.h"
 
 /**
- *_puts - swaps the value of two integers
- * @str: The pointer value one
+ * _puts - print a string to stdout
+ * @str: char array string type
+ * Description: Can only use _putchar
  */
+
 void _puts(char *str)
 {
-	int c = 0;
+	int i;
 
-	while (str[c] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(str[c]);
-		c++;
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }

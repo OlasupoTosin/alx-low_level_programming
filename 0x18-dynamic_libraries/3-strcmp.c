@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
-* _strcmp - function that compares two strings
-* @s1 : number one to compare
-* @s2: number two to compare
-* Return: 0 is numbers are equal result of sustraction if not.
-*/
+ * _strcmp - Compare two strings
+ * @s1: string
+ * @s2: string
+ * Return: negative int if s1 < s2, 0 if matching, and positive int if s1 > s2
+ */
 
 int _strcmp(char *s1, char *s2)
 {
-	while (*s1 == *s2 && (*s1 != '\0' && *s2 != '\0'))
+	int i;
+
+	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
-		s1++;
-		s2++;
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
 	}
-			return (*s1 - *s2);
+	return (0);
 }
